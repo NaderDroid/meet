@@ -1,0 +1,31 @@
+{
+    "src_folders" : ["tests"],
+    "output_folder" : "./reports",
+
+
+    "selenium" : {
+      "start_process" : true,
+      "server_path" : "./bin/selenium-server-standalone-3.141.59.jar",
+      "log_path" : "",
+      "cli_args" : {
+        "webdriver.chrome.driver" : "node_modules/.bin/chromedriver"
+      },
+      "test_settings" : {
+        "default" : {
+          "desiredCapabilities" : {
+            "browserName" : "chrome",
+            "chromeOptions" : {
+              "args" : [
+                "use-fake-device-for-media-stream", 
+                "use-fake-ui-for-media-stream"
+              ],
+          "silent" : true,
+          "screenshots" : {
+            "enabled" : false,
+            "path" : "./screenshots"
+          }
+        }
+      }
+    }
+  }
+}

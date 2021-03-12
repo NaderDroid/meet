@@ -1,0 +1,56 @@
+{
+"src_folders" : ["tests"],
+    "output_folder" : "./reports",
+
+
+  "test_settings": {
+    "default": {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions" : {
+          "args" : [
+            "use-fake-device-for-media-stream", 
+            "use-fake-ui-for-media-stream"
+          ],
+          "w3c": false
+        }
+      }
+    },
+
+    "selenium": {
+      "selenium": {
+        "start_process": true,
+        "port": 4444,
+        "server_path": "./bin/selenium-server-standalone-3.141.59.jar",
+        "cli_args": {
+          "webdriver.gecko.driver": "./node_modules/.bin/geckodriver",
+          "webdriver.chrome.driver": "./node_modules/.bin/chromedriver"
+        }
+      },
+      "webdriver": {
+        "start_process": true
+      }
+    },
+
+    "selenium.chrome": {
+      "extends": "selenium",
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions" : {
+          "args" : [
+            "use-fake-device-for-media-stream", 
+            "use-fake-ui-for-media-stream"
+          ],
+          "w3c": false
+        }
+      }
+    },
+
+    "selenium.firefox": {
+      "extends": "selenium",
+      "desiredCapabilities": {
+        "browserName": "firefox"
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="joinMeet"
+    errors="1" failures="0" hostname="" id="" package="joinMeet" skipped="2"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+    <system-err>
+        Error: An error occurred while retrieving a new session
+       at endReadableNT (_stream_readable.js:1145:12)
+    </system-err>
+  
+
+    
+    <error message="An error occurred while retrieving a new session"><![CDATA[
+      Error: An error occurred while retrieving a new session
+    at JsonWireProtocol.handleSessionCreateError (/home/nader/Desktop/nightwatch/node_modules/nightwatch/lib/transport/transport.js:103:15)
+    at HttpRequest.request.on.err (/home/nader/Desktop/nightwatch/node_modules/nightwatch/lib/transport/transport.js:159:32)
+    at HttpRequest.emit (events.js:198:13)
+    at HttpResponse.originalIssuer.on.args (/home/nader/Desktop/nightwatch/node_modules/nightwatch/lib/http/request.js:142:19)
+    at HttpResponse.emit (events.js:198:13)
+    at IncomingMessage.res.on (/home/nader/Desktop/nightwatch/node_modules/nightwatch/lib/http/response.js:60:14)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="Confirming form page title in the join room" classname="joinMeet">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Join meeting room" classname="joinMeet">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

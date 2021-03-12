@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="findElement"
+    errors="0" failures="1" hostname="" id="" package="findElement" skipped="2"
+    tests="1" time="7.227" timestamp="">
+  
+    <testcase name="Confirming form page title" classname="findElement" time="7.227" assertions="2">
+
+      <failure message="Testing if the page title equals &#39;Meet&#39; in 5000ms - expected &#34;is &#39;Meet&#39;&#34; but got: &#34;Meet - 3AP3H&#34; (5342ms)">    at Object.Confirming form page title (/home/nader/Desktop/nightwatch/tests/findElement.js:5:17)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+    
+    <testcase
+      name="demo element test" classname="findElement">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Login test" classname="findElement">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

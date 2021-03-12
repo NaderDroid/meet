@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="2"
+            failures="0"
+            tests="2">
+
+  <testsuite name="joinMeet"
+    errors="2" failures="0" hostname="" id="" package="joinMeet" skipped="0"
+    tests="2" time="16.48" timestamp="">
+  
+    <testcase name="Confirming form page title in the join room" classname="joinMeet" time="3.017" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Join meeting room" classname="joinMeet" time="13.46" assertions="0">
+    <error message="An error occurred while running .click() command on &lt;//div[@data-testid=&#39;joinRoom&#39;]&gt;: " type="error"><![CDATA[
+    NoSuchElementError: An error occurred while running .click() command on &lt;//div[@data-testid=&#39;joinRoom&#39;]&gt;: 
+    at ClickElement.noSuchElementError (/home/nader/Desktop/nightwatch/node_modules/nightwatch/lib/element/command.js:399:12)
+    at Object.errorHandler (/home/nader/Desktop/nightwatch/node_modules/nightwatch/lib/api/element-commands/_baseElementCommand.js:42:30)
+    at PeriodicPromise.runAction (/home/nader/Desktop/nightwatch/node_modules/nightwatch/lib/utils/periodic-promise.js:64:29)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        NoSuchElementError: An error occurred while running .setValue() command on &lt;//input[@data-testid=&#39;inputName&#39;]&gt;: 
+   {&#34;state&#34;:&#34;success&#34;,&#34;sessionId&#34;:null,&#34;class&#34;:&#34;org.openqa.selenium.remote.Response&#34;,&#34;value&#34;:[],&#34;status&#34;:0}
+   
+  NoSuchElementError: An error occurred while running .click() command on &lt;//div[@data-testid=&#39;joinRoom&#39;]&gt;: 
+   {&#34;state&#34;:&#34;success&#34;,&#34;sessionId&#34;:null,&#34;class&#34;:&#34;org.openqa.selenium.remote.Response&#34;,&#34;value&#34;:[],&#34;status&#34;:0}
+   
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
